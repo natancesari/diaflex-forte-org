@@ -1,16 +1,154 @@
 <!DOCTYPE html>
 <html lang="bg-BG">
 <head>
+    <!-- 1. Metas de Performance e Técnicas -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DiaFlex Forte - Поддържайте нормална кръвна захар</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="referrer" content="no-referrer-when-downgrade">
     
+    <!-- 2. Preconnect, DNS-Prefetch e Preload (Acelerando a primeira imagem) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="preload" as="image" href="https://diaflex-forte-org.vercel.app/diaflex-forte.png">
+
+    <!-- 3. SEO Básico e Palavras-chave Extraídas da Copy -->
+    <title>DiaFlex Forte в България - Естествена подкрепа за нормална кръвна захар</title>
+    <meta name="description" content="Открийте DiaFlex Forte в България. Иновативна натурална формула за поддържане на метаболитния баланс и нормални нива на кръвната захар. Плащане при доставка!">
+    <meta name="keywords" content="DiaFlex Forte, DiaFlex Forte България, цена DiaFlex Forte, кръвна захар, метаболизъм, натурална формула, хранителна добавка, растителни екстракти, метаболитен баланс, плащане при доставка">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+    <!-- 4. Canonical e Hreflang (Sinalizando o idioma Búlgaro) -->
+    <link rel="canonical" href="https://diaflex-forte-org.vercel.app/">
+    <link rel="alternate" hreflang="bg-BG" href="https://diaflex-forte-org.vercel.app/">
+    <link rel="alternate" hreflang="x-default" href="https://diaflex-forte-org.vercel.app/">
+
+    <!-- 5. Metas de Entrega e Devolução -->
+    <meta name="delivery-time" content="2-7 days">
+    <meta name="return-policy" content="30 days">
+
+    <!-- 6. Open Graph (Compartilhamento otimizado para Facebook/WhatsApp) -->
+    <meta property="og:type" content="product">
+    <meta property="og:title" content="DiaFlex Forte в България - Естествена подкрепа за нормална кръвна захар">
+    <meta property="og:description" content="Натурална формула за вашия организъм. Поддържайте метаболитния баланс и ежедневната жизненост. 50% отстъпка днес!">
+    <meta property="og:url" content="https://diaflex-forte-org.vercel.app/">
+    <meta property="og:image" content="https://diaflex-forte-org.vercel.app/diaflex-forte.png">
+    <meta property="og:image:alt" content="Оригинална опаковка DiaFlex Forte">
+    <meta property="og:locale" content="bg_BG">
+    <meta property="og:site_name" content="DiaFlex Forte България">
+    <meta property="product:price:amount" content="39.00">
+    <meta property="product:price:currency" content="EUR">
+
+    <!-- 7. Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DiaFlex Forte в България - Метаболитен баланс">
+    <meta name="twitter:description" content="Открийте DiaFlex Forte с 50% отстъпка. Поръчайте сега и платете при доставка.">
+    <meta name="twitter:image" content="https://diaflex-forte-org.vercel.app/diaflex-forte.png">
+
+    <!-- 8. JSON-LD Completo: Website, Product, Offer e FAQ -->
+    <script type="application/ld+json">
+    [
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "DiaFlex Forte България",
+            "url": "https://diaflex-forte-org.vercel.app/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://diaflex-forte-org.vercel.app/?s={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        },
+        {
+            "@context": "https://schema.org/",
+            "@type": "Product",
+            "name": "DiaFlex Forte",
+            "image": "https://diaflex-forte-org.vercel.app/diaflex-forte.png",
+            "description": "DiaFlex Forte е иновативна натурална формула, създадена от подбрани растителни екстракти, която спомага за поддържане на метаболитния баланс и нормалните нива на кръвната захар в България.",
+            "sku": "DIA-BG-001",
+            "brand": {
+                "@type": "Brand",
+                "name": "DiaFlex Forte"
+            },
+            "offers": {
+                "@type": "Offer",
+                "url": "https://diaflex-forte-org.vercel.app/",
+                "priceCurrency": "EUR",
+                "price": "39.00",
+                "itemCondition": "https://schema.org/NewCondition",
+                "availability": "https://schema.org/InStock",
+                "seller": {
+                    "@type": "Organization",
+                    "name": "DiaFlex Forte България"
+                },
+                "shippingDetails": {
+                    "@type": "OfferShippingDetails",
+                    "shippingRate": {
+                        "@type": "MonetaryAmount",
+                        "value": "0.00",
+                        "currency": "EUR"
+                    },
+                    "deliveryTime": {
+                        "@type": "ShippingDeliveryTime",
+                        "transitTime": {
+                            "@type": "QuantitativeValue",
+                            "minValue": 2,
+                            "maxValue": 7,
+                            "unitCode": "d"
+                        }
+                    }
+                },
+                "hasMerchantReturnPolicy": {
+                    "@type": "MerchantReturnPolicy",
+                    "applicableCountry": "BG",
+                    "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                    "merchantReturnDays": 30,
+                    "returnMethod": "https://schema.org/ReturnByMail",
+                    "returnFees": "https://schema.org/FreeReturn"
+                }
+            }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Безопасен ли е за ежедневна употреба?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Абсолютно. DiaFlex Forte е формулиран с натурални съставки, предназначени за ежедневна подкрепа на организма без нежелани реакции."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Как става доставката и плащането?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "За вашата пълна сигурност в България предлагаме Плащане при доставка. Поръчвате онлайн и плащате в брой на куриера, едва когато получите продукта. Без рискове с кредитни карти!"
+                    }
+                }
+            ]
+        }
+    ]
+    </script>
+    
+    <!-- 9. Microsoft Clarity -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "yiawjwn86r");
+    </script>
+
+    <!-- 10. Estilos CSS -->
     <style>
-        /* Variáveis de Cores Extraídas da Página Oficial DiaFlex Forte */
         :root {
-            --primary-blue: #0066CC; /* Azul forte dos banners e formulário da página oficial */
-            --accent-red: #D92534; /* Vermelho extraído da embalagem do produto e alertas */
-            --bg-light: #F4F7FB; /* Fundo levemente azulado/clínico */
+            --primary-blue: #0066CC; 
+            --accent-red: #D92534; 
+            --bg-light: #F4F7FB; 
             --text-dark: #212529;
             --text-gray: #495057;
             --border-light: #DEE2E6;
@@ -33,7 +171,6 @@
             box-shadow: 0 0 25px rgba(0,0,0,0.05);
         }
 
-        /* Cabeçalho alinhado com o topo da página oficial */
         header {
             background-color: var(--primary-blue);
             text-align: center;
@@ -99,7 +236,7 @@
         }
 
         .benefits-list h3 {
-            color: var(--accent-red); /* Destaque em vermelho para chamar atenção */
+            color: var(--accent-red); 
             margin-bottom: 15px;
             font-size: 20px;
         }
@@ -139,7 +276,7 @@
         }
 
         .price-discount {
-            background-color: var(--accent-red); /* Tag de desconto na cor do produto */
+            background-color: var(--accent-red); 
             color: #ffffff;
             display: inline-block;
             padding: 6px 14px;
@@ -160,7 +297,7 @@
         .price-new {
             font-size: 46px;
             font-weight: 900;
-            color: var(--primary-blue); /* Preço no tom principal */
+            color: var(--primary-blue); 
             line-height: 1;
             margin-bottom: 25px;
             display: block;
@@ -310,13 +447,11 @@
         </header>
 
         <main>
-            <!-- H1 White Hat SEO: Foco na transição suave para a promessa da página oficial -->
             <h1>Естествена подкрепа за нормални нива на кръвната захар с DiaFlex Forte</h1>
             
             <p>В България, поддържането на правилен метаболизъм и баланс в организма е ключът към пълноценен живот. Често пъти умората и дискомфортът са сигнали, че тялото ни се нуждае от помощ, за да регулира процесите си по естествен път.</p>
             <p>Затова хиляди хора се доверяват на <strong>DiaFlex Forte</strong> – иновативна формула, създадена от подбрани растителни екстракти, която спомага за поддържане на метаболитния баланс и ежедневната жизненост.</p>
 
-            <!-- Imagem do Produto -->
             <div class="image-container">
                 <img src="diaflex-forte.png" alt="Оригинална опаковка DiaFlex Forte">
                 <div class="image-caption">Натурална грижа за вашия организъм.</div>
@@ -326,7 +461,6 @@
             <p>Добавката е базирана на напълно естествени съставки, които работят в синергия, за да подпомогнат нормалната функция на тялото. <strong>DiaFlex Forte</strong> е разработен за хора, които търсят надежден начин да допълнят своята диета и да се чувстват енергични през целия ден.</p>
             <p>Приема се изключително лесно – просто следвайте указанията за дневен прием с чаша вода, за да осигурите на тялото си необходимите елементи.</p>
 
-            <!-- Benefícios Alinhados -->
             <div class="benefits-list">
                 <h3>Предимства на DiaFlex Forte:</h3>
                 <ul>
@@ -337,7 +471,6 @@
                 </ul>
             </div>
 
-            <!-- Imagem de Estilo de Vida -->
             <div class="image-container">
                 <img src="diaflex-lifestyle.jpg" alt="Здрави и активни хора в България">
             </div>
@@ -345,12 +478,10 @@
             <h2>Експертно мнение и натурален подход</h2>
             <p>Специалистите по здравословно хранене подчертават важността на навременната грижа. Използването на богатството на природата, съчетано с модерните технологии за извличане на активните вещества, прави този продукт предпочитан избор за дълготрайна подкрепа.</p>
 
-            <!-- Imagem Especialista -->
             <div class="image-container">
                 <img src="diaflex-especialista.jpg" alt="Специалист препоръчва натурални добавки">
             </div>
 
-            <!-- FAQ -->
             <h2>Често задавани въпроси</h2>
             
             <div class="faq-item">
@@ -363,22 +494,18 @@
                 <p>За вашата пълна сигурност в България предлагаме <strong>Плащане при доставка</strong>. Поръчвате онлайн и плащате в брой на куриера, едва когато получите продукта. Без рискове с кредитни карти!</p>
             </div>
 
-            <!-- Caixa de Oferta -->
             <div class="offer-box">
                 <div class="price-discount">СПЕСТЕТЕ 50% ДНЕС!</div>
                 <h3>Инвестирайте в своя баланс сега</h3>
                 <span class="price-old">Стара цена: 78 €</span>
                 <span class="price-new">39 €</span>
                 
-                <!-- Link de Afiliado -->
-                <a href="https://oczsj.doctoradmad.com/l/?sub1=organico" class="cta-button">ПОРЪЧАЙТЕ СЕГА И ПЛАТЕТЕ ПРИ ДОСТАВКА</a>
+                <a href="https://oczsj.doctoradmad.com/l/?sub1=organico" rel="nofollow sponsored" class="cta-button">ПОРЪЧАЙТЕ СЕГА И ПЛАТЕТЕ ПРИ ДОСТАВКА</a>
                 
                 <span class="cod-notice">🚚 Бърза доставка за цяла България. 100% сигурно плащане.</span>
             </div>
-
         </main>
 
-        <!-- Rodapé Legal e Compliance -->
         <footer>
             <div class="footer-links">
                 <a onclick="openModal('modal-terms')">Условия за ползване</a>
@@ -419,7 +546,6 @@
         </div>
     </div>
 
-    <!-- Script de Funcionamento dos Modais -->
     <script>
         function openModal(id) {
             document.getElementById(id).style.display = 'flex';
