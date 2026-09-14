@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="bg-BG">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiaFlex Forte - Поддържайте нормална кръвна захар</title>
+    
+    <style>
+        /* Variáveis de Cores Extraídas da Página Oficial DiaFlex Forte */
+        :root {
+            --primary-blue: #0066CC; /* Azul forte dos banners e formulário da página oficial */
+            --accent-red: #D92534; /* Vermelho extraído da embalagem do produto e alertas */
+            --bg-light: #F4F7FB; /* Fundo levemente azulado/clínico */
+            --text-dark: #212529;
+            --text-gray: #495057;
+            --border-light: #DEE2E6;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        .page-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 0 25px rgba(0,0,0,0.05);
+        }
+
+        /* Cabeçalho alinhado com o topo da página oficial */
+        header {
+            background-color: var(--primary-blue);
+            text-align: center;
+            padding: 20px;
+            border-bottom: 4px solid var(--accent-red);
+        }
+
+        .logo-text {
+            font-size: 32px;
+            font-weight: 900;
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
+
+        main { padding: 40px 30px; }
+
+        h1 {
+            color: var(--primary-blue);
+            font-size: 32px;
+            font-weight: 800;
+            line-height: 1.25;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        h2 {
+            color: var(--primary-blue);
+            font-size: 24px;
+            font-weight: 700;
+            margin: 45px 0 20px 0;
+            border-bottom: 2px solid var(--bg-light);
+            padding-bottom: 12px;
+        }
+
+        p { margin-bottom: 22px; color: var(--text-gray); }
+
+        .image-container {
+            margin: 35px 0;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+        }
+
+        .image-caption {
+            font-size: 13px;
+            color: #888;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .benefits-list {
+            background-color: #F8FAFC; 
+            padding: 30px;
+            border-radius: 12px;
+            border-left: 6px solid var(--primary-blue);
+            margin-bottom: 35px;
+            border: 1px solid var(--border-light);
+        }
+
+        .benefits-list h3 {
+            color: var(--accent-red); /* Destaque em vermelho para chamar atenção */
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .benefits-list ul { list-style-type: none; }
+
+        .benefits-list li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .benefits-list li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            font-size: 18px;
+            color: var(--primary-blue);
+            font-weight: bold;
+        }
+
+        .offer-box {
+            background-color: var(--bg-light);
+            text-align: center;
+            padding: 40px 25px;
+            border-radius: 16px;
+            border: 2px solid var(--primary-blue);
+            margin: 50px 0;
+        }
+
+        .offer-box h3 {
+            color: var(--primary-blue);
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .price-discount {
+            background-color: var(--accent-red); /* Tag de desconto na cor do produto */
+            color: #ffffff;
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .price-old {
+            text-decoration: line-through;
+            font-size: 18px;
+            color: #999;
+            display: block;
+        }
+
+        .price-new {
+            font-size: 46px;
+            font-weight: 900;
+            color: var(--primary-blue); /* Preço no tom principal */
+            line-height: 1;
+            margin-bottom: 25px;
+            display: block;
+        }
+
+        .cta-button {
+            display: inline-block;
+            width: 100%;
+            max-width: 380px;
+            background-color: var(--primary-blue);
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 20px 20px;
+            border-radius: 50px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0, 102, 204, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #0052A3;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(0, 102, 204, 0.5);
+        }
+
+        .cod-notice {
+            font-size: 15px;
+            margin-top: 20px;
+            display: block;
+            color: var(--text-gray);
+            font-weight: 600;
+        }
+
+        .faq-item {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-light);
+        }
+        
+        .faq-item h4 {
+            color: var(--primary-blue);
+            font-size: 19px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: var(--primary-blue);
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #ffffff;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .footer-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        .footer-links a:hover { opacity: 0.8; text-decoration: underline; }
+
+        .modal-overlay {
+            display: none; 
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(5px);
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            opacity: 0;
+            animation: fadeIn 0.3s forwards;
+        }
+
+        @keyframes fadeIn { to { opacity: 1; } }
+
+        .modal-content {
+            background-color: #ffffff;
+            padding: 35px 30px;
+            border-radius: 16px;
+            width: 100%;
+            max-width: 500px;
+            max-height: 85vh;
+            overflow-y: auto;
+            position: relative;
+            text-align: left;
+            color: var(--text-dark);
+            box-shadow: 0 15px 50px rgba(0,0,0,0.3);
+        }
+
+        .modal-content h3 {
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+            font-size: 24px;
+            border-bottom: 2px solid var(--bg-light);
+            padding-bottom: 12px;
+        }
+
+        .modal-content p {
+            font-size: 15px;
+            margin-bottom: 15px;
+            color: var(--text-gray);
+            line-height: 1.6;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            color: #CBD5E1;
+            cursor: pointer;
+            line-height: 1;
+        }
+
+        .close-btn:hover { color: var(--accent-red); }
+
+        @media (max-width: 600px) {
+            main { padding: 30px 20px; }
+            h1 { font-size: 28px; }
+            .price-new { font-size: 40px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-wrapper">
+        <header>
+            <div class="logo-text">DIAFLEX FORTE</div>
+        </header>
+
+        <main>
+            <!-- H1 White Hat SEO: Foco na transição suave para a promessa da página oficial -->
+            <h1>Естествена подкрепа за нормални нива на кръвната захар с DiaFlex Forte</h1>
+            
+            <p>В България, поддържането на правилен метаболизъм и баланс в организма е ключът към пълноценен живот. Често пъти умората и дискомфортът са сигнали, че тялото ни се нуждае от помощ, за да регулира процесите си по естествен път.</p>
+            <p>Затова хиляди хора се доверяват на <strong>DiaFlex Forte</strong> – иновативна формула, създадена от подбрани растителни екстракти, която спомага за поддържане на метаболитния баланс и ежедневната жизненост.</p>
+
+            <!-- Imagem do Produto -->
+            <div class="image-container">
+                <img src="diaflex-forte.png" alt="Оригинална опаковка DiaFlex Forte">
+                <div class="image-caption">Натурална грижа за вашия организъм.</div>
+            </div>
+
+            <h2>Как работи формулата на DiaFlex Forte?</h2>
+            <p>Добавката е базирана на напълно естествени съставки, които работят в синергия, за да подпомогнат нормалната функция на тялото. <strong>DiaFlex Forte</strong> е разработен за хора, които търсят надежден начин да допълнят своята диета и да се чувстват енергични през целия ден.</p>
+            <p>Приема се изключително лесно – просто следвайте указанията за дневен прием с чаша вода, за да осигурите на тялото си необходимите елементи.</p>
+
+            <!-- Benefícios Alinhados -->
+            <div class="benefits-list">
+                <h3>Предимства на DiaFlex Forte:</h3>
+                <ul>
+                    <li><strong>Контрол и баланс:</strong> Подпомага поддържането на нормалните процеси в тялото.</li>
+                    <li><strong>Растителни екстракти:</strong> Съдържа само внимателно селектирани естествени съставки.</li>
+                    <li><strong>Ежедневна енергия:</strong> Спомага за намаляване на чувството за умора.</li>
+                    <li><strong>Лесно приложение:</strong> Удобни капсули за сутрешен и вечерен прием с вода.</li>
+                </ul>
+            </div>
+
+            <!-- Imagem de Estilo de Vida -->
+            <div class="image-container">
+                <img src="diaflex-lifestyle.jpg" alt="Здрави и активни хора в България">
+            </div>
+
+            <h2>Експертно мнение и натурален подход</h2>
+            <p>Специалистите по здравословно хранене подчертават важността на навременната грижа. Използването на богатството на природата, съчетано с модерните технологии за извличане на активните вещества, прави този продукт предпочитан избор за дълготрайна подкрепа.</p>
+
+            <!-- Imagem Especialista -->
+            <div class="image-container">
+                <img src="diaflex-especialista.jpg" alt="Специалист препоръчва натурални добавки">
+            </div>
+
+            <!-- FAQ -->
+            <h2>Често задавани въпроси</h2>
+            
+            <div class="faq-item">
+                <h4>Безопасен ли е за ежедневна употреба?</h4>
+                <p>Абсолютно. DiaFlex Forte е формулиран с натурални съставки, предназначени за ежедневна подкрепа на организма без нежелани реакции.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h4>Как става доставката и плащането?</h4>
+                <p>За вашата пълна сигурност в България предлагаме <strong>Плащане при доставка</strong>. Поръчвате онлайн и плащате в брой на куриера, едва когато получите продукта. Без рискове с кредитни карти!</p>
+            </div>
+
+            <!-- Caixa de Oferta -->
+            <div class="offer-box">
+                <div class="price-discount">СПЕСТЕТЕ 50% ДНЕС!</div>
+                <h3>Инвестирайте в своя баланс сега</h3>
+                <span class="price-old">Стара цена: 78 €</span>
+                <span class="price-new">39 €</span>
+                
+                <!-- Link de Afiliado -->
+                <a href="https://oczsj.doctoradmad.com/l/?sub1=organico" class="cta-button">ПОРЪЧАЙТЕ СЕГА И ПЛАТЕТЕ ПРИ ДОСТАВКА</a>
+                
+                <span class="cod-notice">🚚 Бърза доставка за цяла България. 100% сигурно плащане.</span>
+            </div>
+
+        </main>
+
+        <!-- Rodapé Legal e Compliance -->
+        <footer>
+            <div class="footer-links">
+                <a onclick="openModal('modal-terms')">Условия за ползване</a>
+                <a onclick="openModal('modal-privacy')">Политика за поверителност</a>
+                <a onclick="openModal('modal-contact')">Контакти</a>
+            </div>
+            <p>DiaFlex Forte &copy; 2026. Всички права запазени.</p>
+            <p style="margin-top: 15px; font-style: italic; opacity: 0.7;">*Този продукт е хранителна добавка, а не лекарство. Не замества разнообразното хранене и здравословния начин на живот.</p>
+        </footer>
+    </div>
+
+    <!-- Modais Ocultos (Pop-ups Legais) -->
+    <div id="modal-terms" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-terms')">&times;</span>
+            <h3>Условия за ползване</h3>
+            <p>Използването на този уебсайт и поръчката на продукти чрез него са предмет на тези условия. Тази страница действа като информационен портал и връзка към официалния дистрибутор в България.</p>
+            <p>Методът на плащане е "Наложен платеж" (Плащане при доставка), като потребителят се съгласява да плати цялата сума в брой при получаване на пратката.</p>
+        </div>
+    </div>
+
+    <div id="modal-privacy" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-privacy')">&times;</span>
+            <h3>Политика за поверителност</h3>
+            <p>Ние дълбоко уважаваме вашата поверителност. На тази информационна страница не събираме лични, финансови данни или номера на кредитни карти.</p>
+            <p>Всяка информация за доставка, предоставена във формуляра на официалния уебсайт, ще бъде използвана изключително за логистика и доставка на вашата поръчка.</p>
+        </div>
+    </div>
+
+    <div id="modal-contact" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('modal-contact')">&times;</span>
+            <h3>Обслужване на клиенти</h3>
+            <p>Ако имате въпроси относно състоянието на вашата пратка, препоръчваме да попитате логистичния оператор, когато се свърже с вас за потвърждение на доставката.</p>
+            <p>За общи запитвания относно тази страница, можете да ни пишете на:</p>
+            <a href="mailto:suportegeralnutra@gmail.com" style="display:inline-block; background:#F4F7FB; padding:10px 15px; border-radius:8px; font-weight:bold; color:#0066CC; text-decoration:none; margin-top:10px; border: 1px solid #DEE2E6;">suportegeralnutra@gmail.com</a>
+        </div>
+    </div>
+
+    <!-- Script de Funcionamento dos Modais -->
+    <script>
+        function openModal(id) {
+            document.getElementById(id).style.display = 'flex';
+            document.body.style.overflow = 'hidden'; 
+        }
+        function closeModal(id) {
+            document.getElementById(id).style.display = 'none';
+            document.body.style.overflow = 'auto'; 
+        }
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal-overlay')) {
+                event.target.style.display = "none";
+                document.body.style.overflow = 'auto';
+            }
+        }
+    </script>
+</body>
+</html>
